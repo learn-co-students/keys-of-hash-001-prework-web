@@ -1,5 +1,10 @@
 class Hash
-  def keys_of(arguments)
-    # code goes here
+  def keys_of(arguments, *x)
+    keys =[]
+    each { |key, value|
+      if arguments == value
+        keys << value
+      }
+      keys
   end
 end
