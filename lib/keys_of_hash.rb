@@ -3,7 +3,7 @@ class Hash
 
    arr=[]
 
-   self.each do |key, value|
+   each do |key, value|
       arguments.each do |arg|
         if value==arg && !arr.include?(key)
           arr<<key
