@@ -1,5 +1,18 @@
 class Hash
-  def keys_of(arguments)
-    # code goes here
+  def keys_of(*arguments)
+
+   arr=[]
+
+   self.each do |key, value|
+      arguments.each do |arg|
+        if value==arg && !arr.include?(key)
+          arr<<key
+        end
+      end
+    end
+  
+  return arr
+
+
   end
 end
