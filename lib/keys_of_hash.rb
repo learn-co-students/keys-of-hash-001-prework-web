@@ -1,10 +1,3 @@
-#class Hash
-#  def keys_of(arguments)
-#    key_items = self.select {|key, val| self[key] == arguments}
-#    return key_item
-#  end
-#end
-
 class Hash
   def keys_of(*arguments)
     key_items = []
