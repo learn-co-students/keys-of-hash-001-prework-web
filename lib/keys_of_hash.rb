@@ -1,11 +1,9 @@
 class Hash
   def keys_of(*arguments)
-    collect {|k, v| 
-      if arguments.include?(v)
-        k
-      else
-        nil
+    collect do |key, value|
+      if arguments.include?(value)
+        key
       end
-      }.compact
+    end.compact    
   end
 end
